@@ -1,0 +1,9 @@
+Jul 28 2018 10:20:42
+{"Number":2,"Message":"unlink(D:\\xampp\\htdocs\\touchthewood\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\oyxkq7bfon0p\\export.log): No such file or directory","File":"D:\\xampp\\htdocs\\touchthewood\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":49}
+
+Jul 28 2018 10:20:42
+{"Number":2,"Message":"unlink(D:\\xampp\\htdocs\\touchthewood\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\oyxkq7bfon0p\\localhost-touchthewood-20180728-101935-869.wpress): No such file or directory","File":"D:\\xampp\\htdocs\\touchthewood\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":49}
+
+Jul 28 2018 10:20:42
+{"Number":2,"Message":"rmdir(D:\\xampp\\htdocs\\touchthewood\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\oyxkq7bfon0p): Permission denied","File":"D:\\xampp\\htdocs\\touchthewood\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":54}
+
