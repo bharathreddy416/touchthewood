@@ -121,26 +121,25 @@ footer .socials li a[href*="instagram.com"]::before{
 	position: relative;
 }
 .contact-info{
-  	position: relative;
-	background: #f4f4f4;
+ position: relative;
+ background: #f4f4f4;
 }
 .contact-info .container {
 	position: relative;
-    top: -50px;
-    background: #fff;
+  top: -50px;
 }
 .contact-info .contact-form .field {
 	margin: 10px 0;
 }
 .contact-info .contact-form .field input,
 .contact-info .contact-form .field textarea{
-    width: 100%;
-    border: 1px solid #d3d3d3;
-    padding: 12px 10px;
-    border-radius: 4px;
-    box-shadow: none;
-    outline: 0;
-    margin: 0;
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  padding: 12px 10px;
+  border-radius: 4px;
+  box-shadow: none;
+  outline: 0;
+  margin: 0;
 }
 .contact-info .contact-form .field textarea{
   height: 200px;
