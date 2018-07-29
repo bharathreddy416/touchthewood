@@ -40,7 +40,7 @@
 
 /**  color variables  **/
 
-@custom-global-black: #000;
+@custom-global-black: #595959;
 @custom-global-white: #fff;
 
 
@@ -168,7 +168,7 @@ a {
 	ul.menu {
 		li {
 			padding: 0px 5px;
-			background-color: rgb(0, 0, 0);
+			background-color: @custom-global-black;
 			margin-bottom: 5px;
 			transition: all .2s ease-in-out;
 			&:hover{
@@ -176,7 +176,7 @@ a {
 			}
 			a {
 				display: block;
-				color: white;
+				color: @custom-global-white;
 				&:before {
 					padding: 0;
 				}
@@ -232,7 +232,7 @@ a {
 		}
 	}
 	.rt-tpg-container .rt-tpg-isotope-buttons .selected {
-		color: #fff !important;
+		color: @custom-global-white !important;
 	}
 	.post-meta-user span, .post-meta-tags span {
 		display: block;
@@ -246,18 +246,18 @@ footer{
 		padding: 0 10px 15px;
 		margin-bottom: 15px;
 		@media only screen and (max-width: 767px) {
-			border-bottom: 1px solid white;
+			border-bottom: 1px solid @custom-global-white;
 		}
 		@media only screen and (min-width: 768px) {
-			border-right: 1px solid rgb(255, 255, 255);
+			border-right: 1px solid @custom-global-white;
 		}
 		ul li a{
 			padding: 4px 0;
 			&:hover{
-				color: white !important;
+				color: @custom-global-white !important;
 			}
 			&:after{
-				background-color: white !important;
+				background-color: @custom-global-white !important;
 			}
 		}
 	}

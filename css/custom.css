@@ -104,28 +104,43 @@ footer .socials li a[href*="instagram.com"]::before{
 }
 
 /* Contact Us */
-
+.contact-us-text {
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.contact-us-text h2 {
+	font-size: 48px;
+}
 .contact-us{
-  background-image: cover;
-  background-repeat: no-repeat;
-  height: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 230px;
+	position: relative;
 }
 .contact-info{
-  background-image: url("../images/contact-us.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 30px;
+  	position: relative;
+	background: #f4f4f4;
 }
-.contact-info .contact-form .field{
-  margin-left: 100px;
-  padding-top: 30px;
-  width: 100%;
+.contact-info .container {
+	position: relative;
+    top: -50px;
+    background: #fff;
+}
+.contact-info .contact-form .field {
+	margin: 10px 0;
 }
 .contact-info .contact-form .field input,
 .contact-info .contact-form .field textarea{
-  width: 35%;
-  border: 2px solid #000000;
-  padding: 15px 10px;
+    width: 100%;
+    border: 1px solid #d3d3d3;
+    padding: 12px 10px;
+    border-radius: 4px;
+    box-shadow: none;
+    outline: 0;
+    margin: 0;
 }
 .contact-info .contact-form .field textarea{
   height: 200px;
