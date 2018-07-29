@@ -1,40 +1,40 @@
 /**  mixins  **/
 
 .borderRadius(@radius){
-    -webkit-border-radius: @radius;
-    -moz-border-radius: @radius;
-    border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
 }
 .transition(@transition) {
-    transition:	@transition;
+	transition:	@transition;
 	-webkit-transition: @transition;  
 	-moz-transition: @transition;
 	-ms-transition: @transition; 
 	-o-transition: @transition;  
 }
 .transform(@transform) {
-    -webkit-transform: @transform;
-    -moz-transform: @transform;
-    -ms-transform: @transform;
-    -o-transform: @transform;
-    transform: @transform;
+	-webkit-transform: @transform;
+	-moz-transform: @transform;
+	-ms-transform: @transform;
+	-o-transform: @transform;
+	transform: @transform;
 }
 .placeholder(@color,@font,@font-size){
-    font-family: @font;
-    font-size: @font-size;
-    color: @color;
-    letter-spacing: 0;
-    line-height: 22px;   
+	font-family: @font;
+	font-size: @font-size;
+	color: @color;
+	letter-spacing: 0;
+	line-height: 22px;   
 }
 .boxShadow(@value) {
-    -webkit-box-shadow: @value;
-    -moz-box-shadow: @value;
-    box-shadow: @value;
+	-webkit-box-shadow: @value;
+	-moz-box-shadow: @value;
+	box-shadow: @value;
 }
 .boxShadowWithTwoParams(@value1,@value2) {
-    -webkit-box-shadow: @value1,@value2;
-    -moz-box-shadow: @value1,@value2;
-    box-shadow: @value1,@value2;
+	-webkit-box-shadow: @value1,@value2;
+	-moz-box-shadow: @value1,@value2;
+	box-shadow: @value1,@value2;
 }
 
 
@@ -78,7 +78,7 @@ a {
 		.transition(width .5s);
 	}
 	&:hover::after {
-    	width: 100%;
+		width: 100%;
 	}
 }
 
@@ -91,27 +91,55 @@ a {
 	top: 0;
 	.main-header {
 		padding: 18px 0;
-		.logo {
-			a {
+		.site-nav{
+			background-color: #ffffff;
+			border: none;
+			.logo {
 				display: inline-block;
-				img {
-					max-height: 45px;
+			}
+			ul li{
+				margin: 10px 0 10px 20px;
+				&:hover{
+					a{
+						color: black;
+					}
+				}
+				a {
+					padding: 0;
+					font-size: 16px;
+					color: black;
+					text-transform: uppercase;
+				}
+			}
+			.navbar-collapse{
+				border: none;
+			}
+			.navbar-header{
+				.navbar-toggle{
+					border: none;
+					&:hover{
+						background-color: white;
+						border: none;
+					}
+					.icon-bar{
+						background-color: black;
+					}
+					@media only screen and (max-width: 767px){
+						margin-top: 2px;
+						margin-bottom: 0;
+						margin-right: 0;
+					}
+				}
+				@media only screen and (max-width: 767px){
+					margin-right: 0;
+					margin-left: 0;
 				}
 			}
 		}
-		.main-menu .navigation .site-nav ul li {
-			margin: 10px 0 10px 20px;
-			a {
-				padding: 0;
-				font-size: 16px;
+		.nav-menu{
+			@media only screen and (min-width: 768px) {
+				float: right;
 			}
-		}
-		@media only screen and (min-width: 768px) {
-			display: flex;
-			align-items: center;
-		}
-		@media only screen and (max-width: 767px) {
-			padding: 15px 0;
 		}
 	}
 	@media only screen and (min-width: 768px) {
@@ -121,17 +149,34 @@ a {
 		height: 75px;
 	}
 }
+.hero{
+	background-size: cover;
+	background-repeat: no-repeat;
+	@media only screen and (min-width: 768px) {
+		min-height: 600px;
+	}
+	@media only screen and (max-width: 767px) {
+		min-height: 351px;
+	}
+}
 .socials {
 	position: fixed;
-    right: 0;
-    top: 50%;
+	right: 0;
+	top: 50%;
 	z-index: 9999;
-    .transform(translateY(-50%));
+	.transform(translateY(-50%));
 	ul.menu {
 		li {
-			margin: 0px 5px;
+			padding: 0px 5px;
+			background-color: rgb(0, 0, 0);
+			margin-bottom: 5px;
+			transition: all .2s ease-in-out;
+			&:hover{
+				transform: scale(1.2);
+			}
 			a {
 				display: block;
+				color: white;
 				&:before {
 					padding: 0;
 				}
@@ -165,6 +210,34 @@ a {
 				font-size: 21px;
 			}
 		}
+	}
+}
+footer{
+	@media only screen and (max-width: 767px) {
+		padding: 15px 0 !important;
+	}
+	.footer-menu{
+		padding: 0 10px 15px;
+		margin-bottom: 15px;
+		@media only screen and (max-width: 767px) {
+			border-bottom: 1px solid white;
+		}
+		@media only screen and (min-width: 768px) {
+			border-right: 1px solid rgb(255, 255, 255);
+		}
+		ul li a{
+			padding: 4px 0;
+			&:hover{
+				color: white !important;
+			}
+			&:after{
+				background-color: white !important;
+			}
+		}
+	}
+	.copyright{
+		text-align: center;
+		margin: 0;
 	}
 }
 /*.sa_hover_container {
