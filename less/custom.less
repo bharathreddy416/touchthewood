@@ -50,9 +50,10 @@
 body {
 	font-family: 'Archivo Narrow', sans-serif !important;
 	position: relative;
-	padding-top: 63px;
+	padding-top: 80px;
+	letter-spacing: 1px;
 	@media only screen and (max-width: 767px) {
-		padding-top: 55px;
+		padding-top: 75px;
 	}
 }
 ul {
@@ -89,7 +90,7 @@ a {
 	background: @custom-global-white;
 	top: 0;
 	.main-header {
-		padding: 10px 0;
+		padding: 18px 0;
 		.logo {
 			a {
 				display: inline-block;
@@ -98,26 +99,26 @@ a {
 				}
 			}
 		}
-		.main-menu .navigation .site-nav ul li a {
-			padding: 10px 15px;
-			&:hover {
-				background: @custom-global-black;
-				color: @custom-global-white;
-			}
-			&:after {
-				background: @custom-global-white;
+		.main-menu .navigation .site-nav ul li {
+			margin: 10px 0 10px 20px;
+			a {
+				padding: 0;
+				font-size: 16px;
 			}
 		}
 		@media only screen and (min-width: 768px) {
 			display: flex;
 			align-items: center;
 		}
+		@media only screen and (max-width: 767px) {
+			padding: 15px 0;
+		}
 	}
 	@media only screen and (min-width: 768px) {
-		height: 63px;
+		height: 80px;
 	}
 	@media only screen and (max-width: 767px) {
-		height: 55px;
+		height: 75px;
 	}
 }
 .socials {
@@ -139,8 +140,8 @@ a {
 	}
 }
 .custom-style {
-	.rt-img-holder a:hover::after {
-		background: transparent;
+	.rt-img-holder a:after, .logo a:after {
+		background: none;
 	}
 	.rt-tpg-container .isotope1 .rt-holder {
 		padding: 0;
@@ -160,3 +161,6 @@ a {
 		}
 	}
 }
+/*.sa_hover_container {
+	height: calc(~'100vh - 80px') !important;
+}*/
