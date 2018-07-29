@@ -1,3 +1,6 @@
 /*
-CSS compiled from the file: http://localhost:8080/touchthewood/wp-content/themes/touchthewood/less/custom.less
+CSS compiled from the file: http://localhost/touchthewood/wp-content/themes/touchthewood/less/custom.less
 */
+body {
+  font-family: 'Archivo Narrow', sans-serif;
+}
