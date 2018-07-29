@@ -30,8 +30,5 @@
   </footer>
 
   <?php wp_footer(); ?>
-	<!-- Latest compiled JavaScript -->
-	<script src="wp-content/themes/touchthewood/js/bootstrap.js" type="text/javascript"></script>
-  
  </body>
 </html>
